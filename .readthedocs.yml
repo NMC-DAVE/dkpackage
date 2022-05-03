@@ -3,13 +3,15 @@ version: 2
 
 # Image to use
 build:
-  os: ubuntu-20.04
-  tools:
-    python: "3.9"
+  image: latest
 
-# Configuration
+# Build from the docs/ directory with Sphinx
+sphinx:
+  configuration: docs/conf.py
+
+# Explicitly set the version of Python and its requirements
 python:
-  version: "3.9"
+  version: 3.9
   install:
     - requirements: docs/requirements.txt
     - method: pip
