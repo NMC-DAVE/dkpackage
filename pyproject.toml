@@ -3,12 +3,16 @@ name = "dkpackage"
 version = "0.1.0"
 description = ""
 authors = ["NMC-DAVE <daikan1998@163.com>"]
+license = "MIT"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+matplotlib = "^3.5.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+pytest-cov = "^3.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
