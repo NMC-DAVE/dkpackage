@@ -3,7 +3,7 @@ version: 2
 
 # Image to use
 build:
-  image: latest
+  image: testing
 
 # Build from the docs/ directory with Sphinx
 sphinx:
@@ -11,7 +11,7 @@ sphinx:
 
 # Explicitly set the version of Python and its requirements
 python:
-  version: 3.8
+  version: 3.9
   install:
     - requirements: docs/requirements.txt
     - method: pip
